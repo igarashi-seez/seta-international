@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+header {
+	width:1000px;
+	margin:0 auto;
+}
+
+nav {
+	width:100%;
+	background-color:#009944;
+	margin-top:10px;
+}
+
+#contents {
+	width:100%;
+}
+#contents-inner {
+	width:1000px;
+	margin:0 auto;
+	padding:100px 0;
+}

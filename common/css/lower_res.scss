@@ -1,0 +1,886 @@
+@charset "utf-8";
+
+$sp: 'screen and (max-width: 767px)';
+$pc: 'screen and (min-width: 768px)';
+
+//見出し用
+@import url('https://fonts.googleapis.com/css?family=Lora');
+.ttlCustom01 {
+  position: relative;
+  max-width: 750px;
+  padding: 0 20px 2px 21px;
+  color: #007233;
+  font-size: 45px;
+  font-weight: normal;
+  font-family: 'Lora', serif;
+  line-height: 67px;
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    position: absolute;
+    background: #9c0;
+    content: '';
+    z-index: 1;
+  }
+  &:before {
+    left: 10px;
+    width: 1px;
+    height: 67px;
+  }
+  &:after {
+    left: 0;
+    bottom: 12px;
+    width: 100%;
+    height: 1px;
+  }
+  span {
+    position: relative;
+    z-index: 3;
+    text-shadow: 0 0 1px #FFF,
+                 0 0 2px #FFF,
+                 0 0 3px #FFF,
+                 0 0 4px #FFF,
+                 0 0 5px #FFF;
+  }
+  &--small {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &#community,
+  &#philosophy {
+    margin-top: 80px;
+  }
+  @media #{$sp} {
+    padding: 0 10px 2px 10px;
+    font-size: 27px;
+    line-height: 40px;
+    &:before {
+      left: 5px;
+      height: 40px;
+    }
+    &:after {
+      bottom: 8px;
+    }
+    &--small {
+      margin-left: 14px;
+      font-size: 18px;
+    }
+    &#community,
+    &#philosophy {
+      margin-top: 40px;
+    }
+  }
+}
+
+.ttlCustom00 {
+  position: relative;
+  padding: 0 20px 2px 21px;
+  color: #007233;
+  font-size: 45px;
+  font-weight: normal;
+  font-family: 'Lora', serif;
+  line-height: 67px;
+  box-sizing: border-box;
+  span {
+    position: relative;
+    z-index: 3;
+    text-shadow: 0 0 1px #FFF,
+                 0 0 2px #FFF,
+                 0 0 3px #FFF,
+                 0 0 4px #FFF,
+                 0 0 5px #FFF;
+  }
+  &--small {
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  @media #{$sp} {
+    padding: 0 10px 2px 10px;
+    font-size: 27px;
+    line-height: 40px;
+  }
+}
+
+@media #{$pc} {
+  .slidemenu {
+    display: none !important;
+  }
+  .spView {
+    display: none !important;
+  }
+  .nav_aboutsata {
+    display: table;
+    width: 100%;
+    max-width: 1000px;
+    li {
+      float: none;
+      display: table-cell;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .nav_issp {
+    display: table;
+    width: 100%;
+    max-width: 1000px;
+    li {
+      float: none;
+      display: table-cell;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .nav_summer_saturday {
+    display: table;
+    width: 100%;
+    max-width: 606px;
+    li {
+      float: none;
+      display: table-cell;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  #contents.curriculum table.curriculum01{
+    width: 900px;
+  }
+  .droppy {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+@media #{$sp} {
+  .pcView {
+    display: none !important;
+  }
+}
+header,
+#contents-inner,
+.nav_aboutsata,
+.nav_issp,
+.inner1000px {
+  width: 100%;
+  max-width: 1000px;
+}
+.nav_summer_saturday {
+  width: 100%;
+  max-width: 606px;
+}
+
+.menu-button-left {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  header {
+    & > .fR {
+      display: none;
+    }
+  }
+}
+
+/*===============================================
+●SP版  画面の横幅が768pxまで(スマホ横最大サイズ)
+===============================================*/
+@media screen and (max-width: 767px) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #wrap {
+    width: 100%;
+    background: #FFF;
+  }
+  /*-------------以下レイアウト変更css-------------*/
+  body {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  header {
+    width: 100%;
+    border-bottom: 5px solid #009944;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    > .fL {
+      margin-left: 10px;
+    }
+    h1 {
+      width: 80%;
+      .fL {
+        width: 10%;
+      }
+      .fR {
+        float: left;
+        padding: 10px 0 0 10px;
+        margin-top: 0;
+        width: 75%;
+      }
+    }
+    > .fR {
+      display: none;
+    }
+  }
+  nav {
+    display: none;
+  }
+  .menu-button-left {
+    display: inherit;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    span {
+      text-align: center;
+      background-color: #009944;
+      display: block;
+      padding: 7px 7px 7px 7px;
+      color: #FFFFFF;
+      font-weight: bold;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  /*slidemenu*/
+  .slidemenu {
+    display: inherit;
+    background-color: #009944;
+    li {
+      list-style: none;
+      border-bottom: 1px solid #FFF;
+      font-size: 14px;
+      line-height: 1.4;
+      a {
+        padding: 8px 0 8px 25px;
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        background: url(../images/ico_03.png) no-repeat 15px center;
+      }
+      &:first-child {
+        border-top: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .slidemenu-header {
+      padding-top: 5px;
+      height: 55px;
+      border-bottom: 1px solid #FFF;
+      box-shadow: 0 1px 5px #555;
+      -moz-box-shadow: 0 1px 5px #555;
+      -webkit-box-shadow: 0 1px 5px #555;
+      background-color: #035026;
+      font-size: 15px;
+      div {
+        overflow: hidden;
+        padding: 8px 10px 0;
+      }
+      .ttl {
+        margin-top: 7px;
+        float: left;
+        color: #fff;
+        text-shadow: -1px -1px 0 #000;
+        font-weight: bold;
+      }
+      div .menu-close-button {
+        background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #f0f0f0), color-stop(0, #fff));
+        background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+        width: 64px;
+        margin-top: 0;
+        padding: 5px 0;
+        text-align: center;
+        border: solid 1px #FFF;
+        float: right;
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+        /*padding: 17px 0px 0px 19px;
+        text-decoration: none;
+        color: #fff;*/
+      }
+    }
+  }
+  /*plugin*/
+  #main {
+    background: #fff;
+    z-index: 1;
+  }
+  .slidemenu {
+    top: 0;
+    width: 240px;
+    position: fixed;
+    visibility: hidden;
+    z-index: -1;
+    .slidemenu-header {
+      position: relative;
+    }
+    .slidemenu-body {
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      .slidemenu-content {
+        position: relative;
+      }
+    }
+  }
+  .slidemenu-left {
+    left: 0;
+  }
+  .slidemenu-right {
+    right: 0;
+  }
+  .slidemenu ul {
+    padding-bottom: 87px;
+    li.sttl {
+      padding: 10px 10px;
+      font-weight: bold;
+      color: #fff;
+      border-bottom: 1px solid #FFF;
+      background-color: #007334;
+      font-size: 13px;
+      a {
+        padding: 0;
+        background: none;
+      }
+    }
+  }
+  /*END--slidemenu*/
+  #contents.top {
+    .sec02, .sec01 .inner100p {
+      padding: 20px 0 30px;
+    }
+  }
+  .inner1000px {
+    width: 100%;
+  }
+  #contents.top #coin-slider {
+    display: none;
+  }
+  .flexslider_sp {
+    display: block;
+  }
+  #contents.top {
+    .sec01 {
+      border-top: 5px solid #009944;
+      .txt01 + .mT20 {
+        width: 100%;
+        margin: 25px auto 0;
+      }
+      .fL {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+      }
+      .fR {
+        float: none;
+        width: 90%;
+        margin: 20px auto 0;
+      }
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+    .sec02 h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+  .sec01 iframe + div img {
+    vertical-align: bottom;
+  }
+  iframe {
+    width: 100% !important;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .sec02 iframe, .fb-page span {
+    height: 400px !important;
+  }
+  #contents.top .sec02 {
+    .fL {
+      float: none;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fR {
+      float: none;
+      width: 90%;
+      margin: 20px auto 0;
+      text-align: center;
+    }
+  }
+  .fb-page {
+    width: 100%;
+    display: inline-block;
+  }
+  /*-----------------------
+  Footer
+  -----------------------*/
+  .footerFront {
+    font-size: 15px;
+    .fL span {
+      background-size: 16px 13px;
+      padding-right: 20px;
+      margin: 10px 10px 10px 0;
+    }
+    .fR span {
+      background-size: 16px 13px;
+      padding-right: 20px;
+      margin: 10px 0 10px 10px;
+    }
+    .sp_forseta {
+      a {
+        &:link, &:visited {
+          background-color: #D98802;
+          width: 100%;
+          text-align: center;
+          display: block;
+        }
+        &:hover, &:active {
+          background-color: #B47101;
+        }
+      }
+      span {
+        background: url(../images/ico_arrow_01.png) no-repeat right center;
+        background-size: 16px 13px;
+        padding-right: 20px;
+        margin: 10px 0 10px 0;
+        display: inline-block;
+      }
+    }
+  }
+  footer {
+    padding: 30px 0 0;
+    font-size: 12px;
+    .fR {
+      .menuL dt, .menuR dt, .menu02 dt, .menu03 li {
+        font-size: 14px;
+      }
+    }
+    .fL {
+      float: none;
+      width: 90% !important;
+      margin: 0 auto;
+    }
+    .fR {
+      float: none;
+      width: 90% !important;
+      margin: 20px auto 0;
+    }
+    .fL {
+      .img {
+        width: 20% !important;
+        float: inherit;
+        margin: 0 auto;
+      }
+      .address {
+        width: 100%;
+        float: inherit;
+        margin: 10px auto 0;
+        text-align: center;
+      }
+      dt {
+        width: 90% !important;
+        margin: 0 auto;
+      }
+      .address dl + p {
+        margin: 10px auto 0;
+        width: 50%;
+      }
+    }
+    .fR {
+      .menu01 {
+        display: inherit;
+        li {
+          background: url(../images/ico_03.png) no-repeat left 0.6em;
+          padding-left: 10px;
+        }
+      }
+      .menu02 li {
+        background: url(../images/ico_03.png) no-repeat left 0.6em;
+        padding-left: 10px;
+      }
+      .menuL, .menuR {
+        display: inherit;
+      }
+      dl.menu02, ul.menu03 {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    margin-top: 30px;
+  }
+  /*-----------------------
+  PageTop
+  -----------------------*/
+  #topcontrol img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  
+  //170308
+  #contents-inner {
+    padding: 50px 10px;
+    box-sizing: border-box;
+  }
+  
+  #contents {
+    &.whychoose {
+      h2 {
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      .block {
+        p {
+          font-size: 16px;
+          &:first-child {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+  
+  .nav_aboutsata {
+    margin-top: 40px;
+    text-align: center;
+    li {
+      float: none;
+      & + li {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .nav_issp {
+    margin-top: 40px;
+    text-align: center;
+    li {
+      float: none;
+      & + li {
+        margin-top: 15px;
+      }
+      &:nth-child(n+2):nth-child(-n+5) {
+        display: inline-block;
+      }
+    }
+  }
+
+  .nav_summer_saturday {
+    margin-top: 40px;
+    text-align: center;
+    li {
+      float: none;
+      & + li {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+//170309 custom
+.photoList {
+  display: table;
+  width: 100%;
+  li {
+    display: table-cell;
+  }
+  @media #{$sp} {
+    display: block;
+    font-size: 0;
+    li {
+      margin-top: 10px;
+      display: inline-block;
+    }
+    &.photo05 {
+      li {
+        width: 30%;
+        margin-right: 5%;
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+      }
+    }
+    &.photo02 {
+      li {
+        display: block;
+      }
+    }
+  }
+}
+#contents {
+  &.health_safety {
+    h3 {
+      text-align: center;
+      font-size: 27px;
+      font-weight: normal;
+      color: #393939;
+    }
+    @media #{$sp} {
+      h3 {
+        margin-top: 20px !important;
+        margin-bottom: -20px;
+        font-size: 19px;
+      }
+    }
+  }
+}
+
+@media #{$pc} {
+  #contents {
+    &.contactus .ttlCustom00{
+      padding-top: 80px;
+      font-size: 40px;
+    }
+    &.contactus #contents-inner {
+      padding-top: 0;
+    }
+  }
+}
+
+@media #{$sp} {
+  #contents {
+    &.application {
+      .ttlCustom00 {
+        font-size: 32px;
+      }
+      ul.forms {
+        background: none;
+        li {
+          width: 100%;
+          border-bottom: 5px solid #009944;
+          &:first-child {
+            border-top: 5px solid #009944;
+            border-bottom: 0;
+          }
+          &:nth-child(even) {
+            border-top: 5px solid #009944;
+          }
+          &:last-child {
+            width: 100%;
+            margin-top: 0;
+            border-top: 0;
+            border-bottom: 5px solid #009944;
+          }
+          p {
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+    &.contactus {
+      h2 {
+        &.ttlCustom00{
+          font-size: 36px;
+        }
+        &.line01 {
+          margin-top: 60px;
+          border-top: 0;
+        }
+      }
+      h3 {
+        margin-top: 60px;
+      }
+      .mT60,
+      .mT70{
+        margin-top: 30px !important;
+      }
+    }
+    &.curriculum {
+      ul.Calendar {
+        width: 100%;
+        li {
+          display: inline-block;
+          width: 45.3125vw;
+          margin-right: 0;
+          margin: 0 0 40px;
+          &:nth-child(even) {
+            margin-left: 3.0375vw
+          }
+          & + li {
+            margin-left: 0;
+          }
+        }
+      }
+      ul.schedule {
+        width: 100%;
+        li {
+          display: inline-block;
+          width: 45.3125vw;
+          margin-right: 0;
+          margin: 0 0 40px;
+          box-sizing: border-box;
+          &:nth-child(even) {
+            margin-left: 3.0375vw
+          }
+        }
+      }
+      .green_area {
+        padding: 7.5vw 1vw;
+        h3.mdl {
+          margin-top: 40px;
+        }
+        ul {
+          &.type01 {
+            margin: 0 0 0 .02vw;
+            li {
+              display: inline-block;
+              width: 48%;
+              min-height: 0;
+              margin: 0 .8vw 1vw;
+              &:nth-child(2) {
+                width: 48%;
+              }
+              &:nth-child(4) {
+                width: 48%;
+                min-height: 283px;
+                margin: 0 0 2vw .8vw;
+              }
+              &:nth-child(5) {
+                width: 48%;
+                min-height: 0;
+              }
+            }
+          }
+          &.type02 li {
+            display: inline-block;
+            width: 48%;
+            min-height: 0;
+            margin: 0 .7vw 1vw;
+            &:nth-child(n+2) {
+              min-height: 316px;
+            }
+            &:nth-child(n+4) {
+              min-height: 316px;
+              margin-bottom: 1vw;
+            }
+          }
+        }
+      }
+    }
+    &.events {
+      ul.type01 {
+        margin-right: 0;
+        li{
+          width: 48%;
+          margin: 0 .9vw 30px;
+          &:last-child {
+//            width: 100%;
+            dl {
+              padding-top: 30px;
+            }
+            dl dt,
+            dl dd{
+              float: none;
+              text-align: center;
+            }
+          }
+          &.last{
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+    &.forsetafamilies {
+      h2 {
+        margin-bottom: 40px;
+      }
+      .ttlCustom00 {
+        font-size: 30px;
+      }
+      .photo {
+        width: 100%;
+        margin-bottom: 40px;
+        li {
+          width: 48%;
+          height: 45px;
+          margin: 0 .7vw 10px 0;
+          span {
+            padding-right: 0;
+            font-size: 3.38vw;
+            &.arrow03 {
+              top: 8px;
+              right: 5px;
+              width: 4.83vw;
+              background-size: contain;
+            }
+            &:first-child {
+              margin-right: 4.83vw;
+            }
+          }
+        }
+      }
+      ul.letter {
+        width: 100%;
+        text-align: center;
+        li {
+          display: inline-block;
+          float: none;
+          width: 18%;
+          margin: 0 auto 10px;
+          &:nth-child(5),
+          &:nth-child(10) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    &.job .box01 {
+      padding: 10.3vw 7.67vw 6.67vw;
+      h3{
+        top: -2.9vw;
+        left: 4.8vw;
+        font-size: 4.27vw;
+      }
+    }
+    &.teachers {
+      ul.nav_aboutsata{
+      margin: 0 0 30px;
+      }
+      .block{
+        & > div {
+          float: none;
+          width: 100%;
+        }
+        & figure {
+          float: none;
+          margin-top: 30px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  table * {
+    box-sizing: border-box;
+    border-collapse: collapse;
+  }
+  .tableCustom01 {
+    width: 100%;
+    th,td {
+      display: block;
+      width: 100% !important;
+    }
+  }
+}
+

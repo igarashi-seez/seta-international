@@ -1,0 +1,645 @@
+@charset "utf-8";
+
+/* ------------------------------
+ TOP
+------------------------------ */
+
+#contents.top .main{
+	text-align:center;
+	height:400px;
+}
+
+#coin-slider {
+	margin:0 auto;
+}
+
+#contents.top h2 {
+	font-weight:normal;
+}
+
+#contents.top .sec01 {
+	border-top:#009944 4px solid;
+	background:url(../images/bg_01.png) repeat left top;
+}
+#contents.top .sec01 .inner100p {
+	background:url(../../images/bg_02.png) no-repeat center bottom;
+	padding:60px 0;
+}
+
+#contents.top .sec01 .txt01 {
+	background:url(../../images/bg_corner_01.png) no-repeat left top;
+	padding:30px 0 0 30px;
+}
+
+
+/* sagscroller */
+.sagscroller{
+	width: 460px;
+	height:210px;
+	overflow:hidden;
+	position:relative;
+}
+.sagscroller ul{
+	position:absolute;
+	width: 460px;
+}
+.sagscroller ul li{
+	display:block;
+}
+.sagscroller ul li .rsslabel{
+	margin-top:5px;
+	font-size:12px;
+	clear: both;
+}
+
+.sliderdesctext {
+	top:-16px !important;
+	}
+
+/* 画像縦スクロールデモ */
+div#mysagscroller2{
+	width: 460px;
+	height:210px;
+}
+div#mysagscroller2 ul li img{
+	display:block;
+}
+/* End/sagscroller */
+
+
+
+#contents.top .sec01 h2 {
+	text-align:center;
+	color:#009944;
+	font-size:40px;
+	margin-bottom:50px;
+}
+#contents.top .sec01 .fL {
+	width:490px;
+}
+
+#contents.top .sec01 .fR {
+	width:490px;
+}
+
+#contents.top .sec01 .fR iframe {
+	vertical-align:bottom;
+}
+
+#contents.top .sec02 {
+	background:#009944 url(../../images/bg_03.png) no-repeat center top;
+	padding:60px 0;
+}
+#contents.top .sec02 h2 {
+	text-align:center;
+	color:#FFF;
+	font-size:40px;
+	margin-bottom:50px;
+}
+
+/* ------------------------------
+ aboutseta、summer_saturday、issp  共通
+------------------------------ */
+
+.nav_aboutsata, .nav_summer_saturday, .nav_issp {
+	margin:80px auto 0;
+}
+
+.nav_aboutsata li, .nav_summer_saturday li, .nav_issp li {
+	float:left;
+}
+
+.nav_aboutsata, .nav_issp {
+	width:1000px;
+}
+
+.nav_summer_saturday {
+	width:606px;
+}
+
+
+
+
+
+/* ------------------------------
+ community
+------------------------------ */
+
+#contents.community h3 {
+	text-align:center;
+	font-size:27px;
+	font-weight:normal;
+	color:#393939;
+}
+
+/* ------------------------------
+ ISSP,saturday school
+------------------------------ */
+
+.issp h2, .saturdayschool h2 {
+	text-align:center;
+}
+
+.issp h3, .saturdayschool h3 {
+	text-align:center;
+	margin-top:60px;
+	font-size:30px;
+	font-weight:normal;
+	line-height:1.6;	
+}
+
+.issp table, .saturdayschool table {
+	border-top:1px solid #CCC;
+	border-left:1px solid #CCC;
+	margin-top:50px;
+}
+
+.issp table th, .issp table td, .saturdayschool table th, .saturdayschool table td  {
+	padding:15px;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+}
+
+.issp table th, .saturdayschool table th {
+	background-color:#009944;
+	font-weight:normal;
+	color:#FFF;
+	width:20%;
+	text-align:left;
+	vertical-align:middle;
+}
+
+.issp .box01 li,
+.saturdayschool .box01 li {	
+	color:#009944;
+	padding-bottom:10px;
+}
+
+
+/* ------------------------------
+ Job Opportunity
+------------------------------ */
+.job .box01 {
+  position: relative;
+	padding: 50px 40px 40px;
+	border:solid 1px #009944;
+	color:#009944;
+}
+.job .box01 h3{
+  position: absolute;
+  top: -15px;
+  left: 22%;
+  padding: 0 10px;
+  background: #FFF;
+  font-weight: lighter;
+  font-size: 30px;
+}
+
+.job .box01 li.no {
+	background:none;
+	padding-left:0;
+	padding-bottom:0;
+}
+
+
+
+/* ------------------------------
+ contact us
+------------------------------ */
+
+#contents.contactus h2 {
+	text-align:center;
+}
+
+#contents.contactus .bg01 {
+	background: url(../../contact/images/bg_01.png) no-repeat center top;
+	padding-top:10px;
+}
+
+#contents.contactus h3 {
+	text-align:center;
+	margin-top:80px;
+}
+
+
+
+
+/* ------------------------------
+ application
+------------------------------ */
+
+#contents.application h2 {
+	margin-bottom:50px;
+	text-align:center;
+}
+
+#contents.application ul.forms {
+	background:url(../../applicationforms/images/bg_01.png) no-repeat center top;
+}
+#contents.application ul.forms li {
+	border-bottom:10px solid #009944;
+	width:490px;
+	padding:50px 0;
+	text-align:center;
+}
+#contents.application ul.forms li:first-child {
+	border-top:10px solid #009944;
+}
+#contents.application ul.forms li:nth-child(odd) {
+	float:left;
+}
+#contents.application ul.forms li:nth-child(even) {
+	border-top:10px solid #009944;
+	float:right;
+}
+#contents.application ul.forms li:last-child {
+	clear:both;
+	border-top:10px solid #009944;
+	border-bottom:10px solid #009944;
+	width:1000px;
+	margin-top:80px;
+	padding:50px 0;
+	text-align:center;
+}
+#contents.application ul.forms li p {
+	margin-bottom:43px;
+	font-size:30px;
+}
+#contents.application ul.forms li dl {
+	width:220px;
+	margin:0 auto;
+}
+#contents.application ul.forms li dl dt {
+	float:left;
+}
+#contents.application ul.forms li dl dd {
+	float:right;
+}
+
+
+
+
+
+/* ------------------------------
+ curriculum
+------------------------------ */
+
+#contents.curriculum table.curriculum01 {
+	border-top:1px solid #009944;
+	border-left:1px solid #009944;
+	margin:70px auto;
+}
+#contents.curriculum table.curriculum01 th {
+	border-right:1px solid #009944;
+	border-bottom:1px solid #009944;
+	background:#009944;
+	text-align:center;
+	padding:20px 0;
+}
+#contents.curriculum table.curriculum01 td {
+	border-right:1px solid #009944;
+	border-bottom:1px solid #009944;
+	text-align:center;
+	padding:10px 0;
+	color:#009944;
+}
+
+
+
+
+
+#contents.curriculum ul.Calendar {
+	width: 650px;
+	margin:0 auto;
+	overflow: hidden;
+}
+#contents.curriculum ul.Calendar li {
+	border:1px solid #009944;
+	width:320px;
+	float:left;
+	box-sizing: border-box;
+}
+#contents.curriculum ul.Calendar li+li {
+	margin-left: 10px;
+}
+#contents.curriculum ul.Calendar li dl dt {
+	background:#009944;
+	padding:10px 0;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-0.01em;
+}
+#contents.curriculum ul.Calendar li dl dd {
+	padding:20px;
+	text-align:center;
+}
+
+
+
+
+#contents.curriculum ul.schedule {
+	margin:55px -4px 75px 0;
+}
+#contents.curriculum ul.schedule li {
+	border:1px solid #009944;
+	width:245px;
+	float:left;
+	margin-right:4px;
+}
+#contents.curriculum ul.schedule li dl dt {
+	background:#009944;
+	padding:10px 0;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-0.01em;
+}
+#contents.curriculum ul.schedule li dl dd {
+	min-height:160px;
+	padding:20px 0 10px;
+	text-align:center;
+	color:#000;
+	line-height:1.2;
+}
+#contents.curriculum ul.schedule li dl dd img {
+	margin-bottom:5px;
+}
+
+#contents.curriculum .green_area {
+	background:#009944;
+	padding:75px 20px;
+	position:relative;
+}
+#contents.curriculum .green_area h3.top {
+	position:absolute;
+	top:-25px;
+	left:0;
+}
+#contents.curriculum .green_area h3.mdl {
+	margin-bottom:25px;
+	text-align:center;
+}
+#contents.curriculum .green_area h3.btm {
+	position:absolute;
+	bottom:-25px;
+	right:0;
+}
+#contents.curriculum .green_area ul.type01 {
+	margin-right:-10px;
+}
+#contents.curriculum .green_area ul.type01 li {
+	background:#fff;
+	float:left;
+	width:313px;
+	min-height:407px;
+	margin:0 10px 40px 0;
+	text-align:center;
+}
+#contents.curriculum .green_area ul.type01 li:nth-child(2) {
+	width:314px;
+}
+#contents.curriculum .green_area ul.type01 li:nth-child(4) {
+	width:320px;
+	min-height:330px;
+	margin-left:155px;
+}
+#contents.curriculum .green_area ul.type01 li:nth-child(5) {
+	width:320px;
+	min-height:330px;
+	margin-right:0;
+}
+
+/*
+#contents.curriculum .green_area ul.type02 {
+	background: url(../../curriculum/images/bg_01.png) repeat-y left center;
+}
+*/
+
+#contents.curriculum .green_area ul.type02 li {
+	float:left;
+	width:319px;
+	min-height:386px;
+	text-align:center;
+	border-right: solid 1px #009944;
+	background: #fff;
+}
+
+#contents.curriculum .green_area ul.type02 li:nth-child(3) {
+	border-right: none;
+}
+
+
+#contents.curriculum .green_area ul.type02 li:nth-child(n+4) {
+	min-height:500px;
+}
+
+#contents.curriculum .green_area ul.type01 li img,
+#contents.curriculum .green_area ul.type02 li img {
+	margin-bottom:10px;
+}
+#contents.curriculum .green_area ul.type01 li img+p,
+#contents.curriculum .green_area ul.type02 li img+p {
+	margin-bottom:5px;
+	padding:0 10px;
+	color:#009944;
+}
+#contents.curriculum .green_area ul.type02 li .mb0 {
+	margin-bottom: 0px;
+}
+#contents.curriculum .green_area ul.type02 li .txt10 {
+	font-size: 1.0rem;
+	color:#009944;
+	padding-bottom:10px;
+}
+#contents.curriculum .green_area ul.type01 li p+p,
+#contents.curriculum .green_area ul.type02 li p+p {
+	padding:0 10px 20px;
+	line-height:1.2;
+}
+
+
+/* ------------------------------
+ event
+------------------------------ */
+
+#contents.events h2 {
+	margin-bottom:50px;
+}
+#contents.events ul.type01 {
+	margin-right:-20px;
+}
+#contents.events ul.type01 li {
+	background:#fff;
+	float:left;
+	width:320px;
+ 	margin:0 20px 40px 0;
+	text-align:center;
+}
+
+#contents.events ul.type01 li.last {
+ 	margin-bottom:0;
+}
+
+#contents.events ul.type01 li img {
+	margin-bottom:10px;
+}
+#contents.events ul.type01 li:last-child dl {
+	padding-top:65px;
+}
+#contents.events ul.type01 li:last-child dl dt {
+	float:left;
+	margin:0 20px;
+}
+#contents.events ul.type01 li:last-child dl dd {
+	float:left;
+	padding-top:35px;
+	color:#000;
+}
+
+
+
+/* ------------------------------
+ forsetafamilies
+------------------------------ */
+
+#contents.forsetafamilies h2 {
+	margin-bottom:70px;
+	text-align:center;
+}
+#contents.forsetafamilies h3 {
+	text-align:center;
+	margin-bottom:35px;
+	font-size:30px;
+	font-weight:normal;
+}
+
+#contents.forsetafamilies h3+p {
+	margin-bottom:35px;
+}
+
+
+#contents.forsetafamilies .photo {
+	width:1000px;
+	margin-bottom:70px;
+}
+#contents.forsetafamilies .photo li {
+	display: flex;
+  position: relative;
+	float:left;
+  width: 320px;
+  height: 60px;
+	margin:0 0 20px 20px;
+  background: #99cc00;
+  justify-content: center;
+  align-items: center;
+}
+#contents.forsetafamilies .photo li:first-child {
+	margin-left:0;
+}
+#contents.forsetafamilies .photo li a:hover{
+  text-decoration: none;
+}
+#contents.forsetafamilies .photo li span {
+  padding-right: 40px;
+  color: #FFF;
+  font-size: 21px;
+  text-align: center;
+  display: block;
+}
+#contents.forsetafamilies .photo li span.arrow03 {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  width: 32px;
+  height: 27px;
+  background: url(../images/ico_arrow_01.png) no-repeat right center;
+  content: "";
+}
+
+#contents.forsetafamilies ul.letter {
+	width:926px;
+	margin:0 auto;
+}
+#contents.forsetafamilies ul.letter li {
+	float:left;
+	margin:0 44px 20px 0;
+}
+#contents.forsetafamilies ul.letter li:nth-child(5),
+#contents.forsetafamilies ul.letter li:last-child {
+	margin:0 0 20px 0;
+}
+
+
+
+/* ------------------------------
+ teachers
+------------------------------ */
+
+#contents.teachers h2 {
+	margin-bottom:50px;
+}
+#contents.teachers .block {
+	border-bottom:1px solid #EAEAEA;
+	margin-bottom:40px;
+	padding-bottom:40px;
+}
+#contents.teachers .block > div {
+	float:right;
+	width:760px;
+}
+#contents.teachers .block > div p:first-child {
+	background:url(../../teachers/images/bg_name.png) no-repeat left top;
+	min-height:42px;
+	margin-bottom:20px;
+	padding:7px 0 0 63px;
+	color:#009944;
+	font-size:30px;
+}
+#contents.teachers .block figure {
+	float:left;
+}
+#contents.teachers .block figure+p {
+	clear:both;
+	padding-top:40px;
+}
+
+
+
+/* ------------------------------
+ whychoose
+------------------------------ */
+
+#contents.whychoose h2 {
+	margin-bottom:50px;
+}
+#contents.whychoose h3 {
+	margin-bottom:60px;
+	font-size:30px;
+	font-weight:normal;
+}
+#contents.whychoose .block {
+	border-bottom:1px solid #EAEAEA;
+	margin-bottom:40px;
+	padding-bottom:40px;
+}
+#contents.whychoose .block p:first-child {
+	margin-bottom:15px;
+	color:#009944;
+	font-size:30px;
+}
+#contents.whychoose .block p:first-child img {
+	vertical-align:middle;
+	margin-left:8px;
+}
+#contents.whychoose .block p {
+	margin-bottom:20px;
+}
+#contents.whychoose .block p:last-child {
+	margin-bottom:0;
+}
+
+
+
+
+
+
+

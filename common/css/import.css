@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*リセットcss*/
+@import url(html5reset-1.6.1.css);
+
+/*ページの枠組み*/
+@import url(frame.css);
+
+/*共通*/
+@import url(common.css);
+
+/*各ページスタイル*/
+@import url(style.css);

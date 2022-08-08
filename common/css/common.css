@@ -1,0 +1,443 @@
+@charset "utf-8";
+body {
+	background-color: #FFF;
+	color:#4C4C4C;
+	font-size:20px;
+	line-height:1.4em;
+	font-family: Meiryo, メイリオ, 'Hiragino Kaku Gothic ProN';
+-webkit-text-size-adjust: 100%;	
+}
+
+img {
+	vertical-align:bottom;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+/* ------------------------------
+ 共通
+------------------------------ */
+
+.fL{
+	float:left;
+}
+.fR{
+	float:right;
+}
+.txtC{
+	text-align:center;
+}
+.txtR{
+	text-align:right;
+}
+
+.underline {
+	text-decoration:underline !important;
+}
+
+.mT10{ margin-top:10px !important; }
+.mT15{ margin-top:15px !important; }
+.mT20{ margin-top:20px !important; }
+.mT30{ margin-top:30px !important; }
+.mT40{ margin-top:40px !important; }
+.mT50{ margin-top:50px !important; }
+.mT60{ margin-top:60px !important; }
+.mT70{ margin-top:70px !important; }
+.mT80{ margin-top:80px !important; }
+.mT90{ margin-top:90px !important; }
+
+.mB90{ margin-bottom:90px !important; }
+
+
+.mL0{ margin-left:0 !important; }
+
+.mL10{ margin-left:10px !important; }
+.mL20{ margin-left:20px !important; }
+.mL30{ margin-left:30px !important; }
+
+
+.pLR20 {
+	padding-left:20px !important;
+	padding-right:20px !important;
+}
+
+
+/* ------------------------------
+ ライン
+------------------------------ */
+.line01 {
+	border-top:1px solid #EAEAEA;
+	padding-top:80px;
+	margin-top:80px;
+}
+
+.line02 {
+	border-top:1px solid #EAEAEA;
+	padding-top:40px;
+	margin-top:40px;
+}
+
+/* ------------------------------
+ ボックス
+------------------------------ */
+
+/* -------緑四角アイコン------- */
+.box01 li {
+	background:url(../images/ico_01.png) no-repeat left 8px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+/* -------グレー四角アイコン------- */
+.box02 li {
+	background:url(../images/ico_02.png) no-repeat left 8px;
+	padding-left:20px;
+	padding-bottom:20px;
+}
+
+.yearly {
+	border:1px #009944 solid;
+	width:40%;
+	margin:0 auto;
+}
+.yearly dt {
+	background-color:#009944;
+	padding:10px;
+	color:#FFF;
+	text-align:center;
+}
+.yearly dd {
+	padding:20px;
+	text-align:center;
+}
+
+
+
+/* ------------------------------
+ リンク
+------------------------------ */
+a:link, a:visited {
+	color:#4C4C4C;
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	color:#4C4C4C;
+	text-decoration:underline;
+}
+
+/* ------------------------------
+ テキスト
+------------------------------ */
+
+.fGreen01 {
+	color:#009944;
+
+}
+
+/* ------------------------------
+ ヘッダー
+------------------------------ */
+header h1 {
+	width:728px;
+}
+
+header h1 .fL {
+	margin-top:10px;
+}
+
+header h1 .fR {
+	margin-top:27px;
+}
+
+header > .fR {
+	margin-top:22px;
+}
+
+header > .fR p {
+	margin-top:2px;
+}
+
+
+/* ------------------------------
+グローバルナビ
+------------------------------ */
+nav {
+	color:#FFF;
+	font-size:22px;
+}
+nav .font01 {
+	color:#ACDEBE;
+	font-size:14px;
+	padding:0 5px;
+}
+
+.droppy { 
+  position: relative;
+  width:1000px;
+  margin:0 auto;
+  display:table;
+  background:url(../images/bg_gnav_01.png) no-repeat right center;
+ }
+.droppy .single { 
+  height: 80px;/*親メニューの高さ*/
+  display:table-cell;
+  vertical-align: middle;
+  background:url(../images/bg_gnav_01.png) no-repeat left center;
+  padding:0x 10px;
+  text-align:center;
+  line-height:0.9em;
+  position: relative;
+}
+.droppy .single.on { 
+	  background-color: #007334; /*そのページの時の親メニューの背景色*/
+}
+	
+.droppy .single a {
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+}
+
+  .droppy ul.second { 
+  position: absolute;
+  top: 68px;/*親メニューとのずらし具合*/
+  width: 100%;
+  /*max-width:350px;*/
+  background:url(../images/bg_gnav_02.png) repeat-x center top;
+  padding-top:14px;
+  display:none;
+  }
+  .droppy ul.second a {
+   border-top: 1px dashed #FFF;
+   opacity: 0.9;
+   filter:alpha(opacity=90);
+   padding:15px 10px;
+   }
+  .droppy ul.second a.first {
+   border-top: none;
+   }
+  
+    
+
+  .droppy li.hover {
+	  background: (../images/bg_gnav_01.png) no-repeat left center;
+	  color:#FFF; /*ホバー時の親メニューの文字色*/
+	  background-color: #007334; /*ホバー時の親メニューの背景色*/
+ }
+  .droppy li.hover a {
+  background:url(../images/bg_gnav_01.png) no-repeat right center;
+ }
+  .droppy ul.second li a { background-color: #3CAC44; background-image:none; }/*子メニューの背景色*/
+  .droppy ul.second a.hover { background-color: #35973D; }/*ホバー時の子メニューの背景色*/
+
+  * html .droppy ul { line-height: 0; } /* IE6 "fix" */
+  .droppy ul.second  a { zoom: 1; } /* IE6/7 fix */
+
+
+
+
+/* ------------------------------
+ inner
+------------------------------ */
+.inner100p {
+	width:100%;
+	margin:0 auto;
+}
+.inner1000px {
+	width:1000px;
+	margin:0 auto;
+}
+
+/* ------------------------------
+フッター
+------------------------------ */
+
+.footerFront a:link, .footerFront a:visited{
+	color:#FFF;
+}
+
+.footerFront a:hover, .footerFront a:active{
+	color:#FFF;
+}
+
+.footerFront {
+	color:#FFF;
+	font-size:24px;
+}
+
+
+.footerFront a.fL:link, .footerFront a.fL:visited {
+	background-color:#3DBEDA;
+	width:50%;
+	text-align:right;
+	display:block;
+}
+
+.footerFront a.fL:hover, .footerFront a.fL:active {
+	background-color:#239EB8;
+}
+
+.footerFront .fL span{
+	background:url(../images/ico_arrow_01.png) no-repeat right center;
+	padding-right:50px;
+	margin:30px;
+	display:inline-block;
+}
+
+
+.footerFront a.fR:link, .footerFront a.fR:visited {
+	background-color:#3772D2;
+	width:50%;
+	display:block;
+}
+
+.footerFront a.fR:hover, .footerFront a.fR:active {
+	background-color:#275BB1;
+}
+
+
+.footerFront .fR span{
+	background:url(../images/ico_arrow_01.png) no-repeat right center;
+	padding-right:50px;
+	margin:30px;
+	display:inline-block;
+}
+
+footer a:link, footer a:visited{
+	color:#666;
+}
+footer a:hover, footer a:active{
+	color:#666;
+}
+
+footer {
+	padding:50px 0 0;
+	font-size:16px;
+}
+footer .fL {
+	width:490px;
+}
+
+
+footer .fL .img {
+	width:110px !important;
+	float:left;
+}
+
+footer .fL .address {
+	width:365px;
+	float:right;
+}
+
+footer .fL .address dd {
+	margin-top:10px;
+	color:#666;
+}
+
+
+footer .fR {
+	width:490px;
+}
+
+footer .fR a.arrow01 {
+	background:url(../images/ico_arrow_02.png) no-repeat right center;
+	padding-right:20px;
+}
+
+footer .fR .menu01{
+	display:table;
+}
+
+footer .fR .menu01 li, footer .fR .menu02 li {
+	background:url(../images/ico_03.png) no-repeat left 0.6em;
+	padding-left:10px;
+}
+
+
+footer .fR .menuL, footer .fR .menuR {
+	display:table-cell;
+}
+footer .fR .menuL {
+	padding-right:40px;	
+}
+footer .fR .menuL dt, footer .fR .menuR dt {
+	color:#006C31;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+
+footer .fR .menu02 {
+	width:490px;
+	display:table;
+}
+footer .fR .menu02 dt {
+	color:#006C31;
+	font-weight:bold;
+	font-size:18px;
+}
+
+
+footer .fR .menu03 {
+	width:490px;
+}
+footer .fR .menu03 li {
+	color:#006C31;
+	font-weight:bold;
+	font-size:18px;
+	display:table-cell;
+}
+
+footer .fR .menu03 li:first-child {
+	padding-right:20px;
+}
+
+footer .fR dt a:link, footer .fR dt a:visited,
+footer .fR .menu03 li a:link,footer .fR .menu03 li a:visited {
+	color:#006C31;
+}
+footer .fR dt a:hover, footer .fR dt a:active,
+footer .fR .menu03 li a:hover, footer .fR .menu03 li a:active {
+	color:#006C31;
+}
+
+
+
+.copyright {
+	background-color:#EFEFEF;
+	padding:30px;
+	text-align:center;
+	color:#999;
+	font-size:12px;
+	margin-top:50px;
+}
+
+
+/* ------------------------------
+ ロールオーバー
+------------------------------ */
+
+a.alpha:hover {opacity:0.7; filter:alpha(opacity=70); }
+
+/* ------------------------------
+ clearfix
+------------------------------ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* For IE 6/7 only */
+.clearfix {
+    *zoom: 1;
+}
+

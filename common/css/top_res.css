@@ -1,0 +1,884 @@
+@charset "utf-8";
+
+
+/*===============================================
+●PC版 画面の横幅が801px以上(タブレットの縦サイズ以上)
+===============================================*/
+@media screen and (min-width: 801px){
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;　
+}
+#wrap{
+width:100%;
+}
+/*-------------以下レイアウト変更css-------------*/
+.menu-button-left {
+	display:none;
+}
+
+.slidemenu {
+	display:none;
+}
+
+.flexslider_sp {
+	display:none;
+}
+
+
+.fb-page {
+		width:490px !important;
+
+}
+
+.footerFront .sp_forseta {
+	display:none;
+}
+
+
+}
+
+
+/*===============================================
+●タブレット版  画面の横幅が800pxまで(タブレットの縦サイズまで)
+===============================================*/
+@media screen and (max-width:800px){
+img{
+width: 100%;
+height: auto;
+}
+#wrap{
+width:100%;
+}
+/*-------------以下レイアウト変更css-------------*/
+
+/* 「SP版とは異なる数値」と記載のないところは、SP版と同じcssとなる。 */
+body {
+/*SP版とは異なる数値*/ font-size:26px;
+	line-height:1.4em;
+}
+
+header {
+width: 100%;
+border-bottom:5px solid #009944;
+padding-bottom:10px;
+background-color:#FFFFFF;
+}
+header > .fL {
+	margin-left:10px;
+}
+
+header h1 {
+width: 80%;
+}
+header h1 .fL{
+	width:10%;
+}
+header h1 .fR {
+	float:left;
+	padding:10px 0 0 10px;
+	margin-top:0;
+	width:75%;
+}
+
+
+header > .fR {
+	display:none;
+}
+
+nav {
+	display:none;
+}
+
+
+.menu-button-left {
+	display:inherit;
+	border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	}
+.menu-button-left span{
+	text-align:center;
+	background-color:#009944;
+	display:block;
+	padding:7px 7px 7px 7px;
+	color:#FFFFFF;
+	font-weight:bold;
+	}
+
+.menu-button-left span img {
+	vertical-align:middle;
+}
+
+/*slidemenu*/
+.slidemenu {
+	display:inherit;
+	background-color:#009944;
+}
+.slidemenu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    font-size:14px;
+    line-height: 1.4;
+}
+.slidemenu li a {
+    padding:8px 0 8px 25px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+	background:url(../images/ico_03.png) no-repeat 15px center;
+}
+.slidemenu li:first-child {
+    border-top: none;
+}
+.slidemenu li:last-child {
+    border-bottom: none;
+}
+.slidemenu .slidemenu-header {
+    padding-top:5px;
+    height: 55px;
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0 1px 5px #555;
+    -moz-box-shadow: 0 1px 5px #555;
+    -webkit-box-shadow: 0 1px 5px #555;
+	background-color:#035026;
+/*SP版とは異なる数値*/ font-size: 18px;
+}
+.slidemenu .slidemenu-header div {
+    overflow: hidden;
+    padding: 8px 10px 0;
+}
+.slidemenu .slidemenu-header .ttl {
+    margin-top: 7px;
+    float: left;
+    color: #fff;
+	text-shadow: -1px -1px 0 #000;
+	font-weight:bold;
+}
+.slidemenu .slidemenu-header div .menu-close-button {
+    background: linear-gradient(to bottom, #fff 0%,#f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #f0f0f0), color-stop(0, #fff));
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    width: 64px;
+    margin-top: 0;
+/*SP版とは異なる数値*/ padding: 5px 0;
+    text-align: center;
+    border: solid 1px #FFF;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+/*SP版とは異なる数値*/ line-height:1.4;
+    /*padding: 17px 0px 0px 19px;
+    text-decoration: none;
+    color: #fff;*/
+}
+
+
+
+/*plugin*/
+#main {
+  background: #fff;
+  z-index: 1;
+}
+.slidemenu {
+  top: 0;
+  width: 240px;
+  position: fixed;
+  visibility: hidden;
+  z-index: -1;
+
+}
+.slidemenu .slidemenu-header {
+  position: relative;
+}
+.slidemenu .slidemenu-body {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slidemenu .slidemenu-body .slidemenu-content {
+  position: relative;
+}
+.slidemenu-left {
+    left: 0;
+}
+.slidemenu-right {
+    right: 0;
+}
+.slidemenu ul {
+  padding-bottom:87px;
+}
+.slidemenu ul li.sttl {
+padding: 10px 10px;
+font-weight: bold;
+color: #fff;
+border-bottom: 1px solid #FFF;
+background-color:#007334;
+font-size:13px;
+}
+
+.slidemenu ul li.sttl a {
+padding: 0;
+background:none;
+}
+
+/*END--slidemenu*/
+
+
+
+#contents.top .sec02, #contents.top .sec01 .inner100p {
+	padding:20px 0 30px;
+}
+
+/*SP版とは異なる数値*/  #contents.top .sec01 .inner100p {
+	background:none;
+}
+
+.inner1000px{
+	width:100%;
+	}
+	
+#contents.top #coin-slider {
+	display:none;
+}
+	
+.flexslider_sp {
+	display:block;
+}
+#contents.top .sec01{	
+	border-top:5px solid #009944;
+}
+#contents.top .txt01 + .mT20 {
+/*SP版とは異なる数値*/ width:60%;
+ margin:25px auto 0;
+}
+
+#contents.top .sec01 .fL {
+	float:none;
+/*SP版とは異なる数値*/ width:70%;
+	margin:0 auto;
+}
+#contents.top .sec01 .fR {
+	float:none;
+/*SP版とは異なる数値*/ width:70%;
+	margin:20px auto 0;
+}
+
+
+#contents.top .sec01 h2, #contents.top .sec02 h2 {
+	/*SP版とは異なる数値*/ font-size:34px;
+	margin-bottom:10px;
+/*SP版とは異なる数値*/ width:70%;
+	margin:0 auto;
+}
+#contents.top .sec02 h2 {
+	margin-bottom:20px;
+}
+
+.sec01 iframe + div img{
+	vertical-align:bottom;	
+}
+
+
+iframe {
+		width:100% !important;
+		display:inline-block;
+		vertical-align:bottom;
+}
+
+.sec02 iframe {
+height:400px !important;
+}
+
+.fb-page span {
+height:400px !important;
+}
+
+
+#contents.top .sec02 .fL {
+	float:none;
+/*SP版とは異なる数値*/ width:70%;
+	margin:0 auto;
+	text-align:center;
+}
+#contents.top .sec02 .fR {
+	float:none;
+/*SP版とは異なる数値*/ width:70%;
+	margin:20px auto 0;
+	text-align:center;
+}
+
+.fb-page {
+	width:100%;
+	display:inline-block;
+}
+
+/*-----------------------
+Footer
+-----------------------*/
+.footerFront {
+	/*SP版とは異なる数値*/ font-size:26px;
+}
+
+
+.footerFront .fL span{
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 10px 10px 0;
+}
+
+
+.footerFront .fR span{
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 0 10px 10px;
+}
+
+
+.footerFront .sp_forseta a:link, .footerFront .sp_forseta a:visited {
+	background-color:#D98802;
+	width:100%;
+	text-align:center;
+	display:block;
+}
+
+.footerFront .sp_forseta a:hover, .footerFront .sp_forseta a:active {
+	background-color:#B47101;
+}
+
+.footerFront .sp_forseta span{
+	background:url(../images/ico_arrow_01.png) no-repeat right center;
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 0 10px 0;
+	display:inline-block;
+}
+
+
+
+
+footer {
+	padding:30px 0 0;
+/*SP版とは異なる数値*/ font-size:18px;
+/*SP版とは異なる数値*/ line-height:1.4;
+}
+
+footer .fR .menuL dt, footer .fR .menuR dt, footer .fR .menu02 dt , footer .fR .menu03 li {
+/*SP版とは異なる数値*/ font-size:18px;
+}
+
+
+footer .fL {
+	float:none;
+/*SP版とは異なる数値*/ width:70% !important;
+	margin:0 auto;
+}
+
+footer .fR {
+	float:none;
+/*SP版とは異なる数値*/ width:70% !important;
+	margin:20px auto 0;
+/*SP版とは異なる数値*/text-align:center;
+}
+
+
+
+
+footer .fL .img {
+	width:20% !important;
+	float:inherit;
+	margin:0 auto;
+}
+
+footer .fL .address {
+	width:100%;
+	float:inherit;
+	margin:10px auto 0;
+	text-align:center;
+}
+
+footer .fL dt {
+/*SP版とは異なる数値*/ width:70% !important;
+	margin:0 auto;
+}
+
+footer .fL .address dl + p {
+	margin:10px auto 0;
+/*SP版とは異なる数値*/ width:40%;
+}
+
+footer .fR .menu01{
+/*SP版とは異なる数値*/display:inline-block;
+/*SP版とは異なる数値*/ text-align:left;
+	}
+
+footer .fR .menu01 li, footer .fR .menu02 li {
+	background:url(../images/ico_03.png) no-repeat left 0.6em;
+	padding-left:10px;
+}
+
+
+footer .fR .menuL, footer .fR .menuR {
+	display:inherit;
+
+}
+
+
+footer .fR dl.menu02 {
+/*SP版とは異なる数値*/ display:inline-block;
+/*SP版とは異なる数値*/ width:70%;
+/*SP版とは異なる数値*/ text-align:left;
+}
+
+
+footer .fR ul.menu03  {
+/*SP版とは異なる数値*/ display:inline-block;
+/*SP版とは異なる数値*/ width:70%;
+/*SP版とは異なる数値*/ text-align:left;
+
+}
+
+.copyright {
+	margin-top:30px;
+}
+
+/*-----------------------
+PageTop
+-----------------------*/
+
+#topcontrol img {
+	width:50px !important;
+	height:50px !important;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*===============================================
+●SP版  画面の横幅が768pxまで(スマホ横最大サイズ)
+===============================================*/
+@media screen and (max-width:767px){
+img{
+width: 100%;
+height: auto;
+}
+#wrap{
+width:100%;
+}
+/*-------------以下レイアウト変更css-------------*/
+
+body {
+	font-size:14px;
+	line-height:1.4em;
+}
+
+header {
+width: 100%;
+border-bottom:5px solid #009944;
+padding-bottom:10px;
+background-color:#FFFFFF;
+}
+header > .fL {
+	margin-left:10px;
+}
+
+header h1 {
+width: 80%;
+}
+header h1 .fL{
+	width:10%;
+}
+header h1 .fR {
+	float:left;
+	padding:10px 0 0 10px;
+	margin-top:0;
+	width:75%;
+}
+
+
+header > .fR {
+	display:none;
+}
+
+nav {
+	display:none;
+}
+
+
+.menu-button-left {
+	display:inherit;
+	border-radius:5px 5px 5px 5px;
+	-webkit-border-radius:5px 5px 5px 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	position:absolute;
+	top:10px;
+	right:10px;
+	}
+.menu-button-left span{
+	text-align:center;
+	background-color:#009944;
+	display:block;
+	padding:7px 7px 7px 7px;
+	color:#FFFFFF;
+	font-weight:bold;
+	}
+
+.menu-button-left span img {
+	vertical-align:middle;
+}
+
+/*slidemenu*/
+.slidemenu {
+	display:inherit;
+	background-color:#009944;
+}
+.slidemenu li {
+    list-style: none;
+    border-bottom: 1px solid #FFF;
+    font-size:14px;
+    line-height: 1.4;
+}
+.slidemenu li a {
+    padding:8px 0 8px 25px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+	background:url(../images/ico_03.png) no-repeat 15px center;
+}
+.slidemenu li:first-child {
+    border-top: none;
+}
+.slidemenu li:last-child {
+    border-bottom: none;
+}
+.slidemenu .slidemenu-header {
+    padding-top:5px;
+    height: 55px;
+    border-bottom: 1px solid #FFF;
+    box-shadow: 0 1px 5px #555;
+    -moz-box-shadow: 0 1px 5px #555;
+    -webkit-box-shadow: 0 1px 5px #555;
+	background-color:#035026;
+    font-size: 15px;
+}
+.slidemenu .slidemenu-header div {
+    overflow: hidden;
+    padding: 8px 10px 0;
+}
+.slidemenu .slidemenu-header .ttl {
+    margin-top: 7px;
+    float: left;
+    color: #fff;
+	text-shadow: -1px -1px 0 #000;
+	font-weight:bold;
+}
+.slidemenu .slidemenu-header div .menu-close-button {
+    background: linear-gradient(to bottom, #fff 0%,#f0f0f0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #f0f0f0), color-stop(0, #fff));
+    background: -webkit-linear-gradient(top, #fff 0%, #f0f0f0 100%);
+    width: 64px;
+    margin-top: 0;
+    padding: 5px 0;
+    text-align: center;
+    border: solid 1px #FFF;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    /*padding: 17px 0px 0px 19px;
+    text-decoration: none;
+    color: #fff;*/
+}
+
+
+
+/*plugin*/
+#main {
+  background: #fff;
+  z-index: 1;
+}
+.slidemenu {
+  top: 0;
+  width: 240px;
+  position: fixed;
+  visibility: hidden;
+  z-index: -1;
+
+}
+.slidemenu .slidemenu-header {
+  position: relative;
+}
+.slidemenu .slidemenu-body {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.slidemenu .slidemenu-body .slidemenu-content {
+  position: relative;
+}
+.slidemenu-left {
+    left: 0;
+}
+.slidemenu-right {
+    right: 0;
+}
+.slidemenu ul {
+  padding-bottom:87px;
+}
+.slidemenu ul li.sttl {
+padding: 10px 10px;
+font-weight: bold;
+color: #fff;
+border-bottom: 1px solid #FFF;
+background-color:#007334;
+font-size:13px;
+}
+
+.slidemenu ul li.sttl a {
+padding: 0;
+background:none;
+}
+
+/*END--slidemenu*/
+
+
+
+#contents.top .sec02, #contents.top .sec01 .inner100p {
+	padding:20px 0 30px;
+}
+
+.inner1000px{
+	width:100%;
+	}
+	
+#contents.top #coin-slider {
+	display:none;
+}
+	
+.flexslider_sp {
+	display:block;
+}
+#contents.top .sec01{	
+	border-top:5px solid #009944;
+}
+#contents.top .sec01 .txt01 + .mT20 {
+ width:100%;
+ margin:25px auto 0;
+}
+
+
+#contents.top .sec01 .fL {
+	float:none;
+	width:90%;
+	margin:0 auto;
+}
+#contents.top .sec01 .fR {
+	float:none;
+	width:90%;
+	margin:20px auto 0;
+}
+
+
+
+#contents.top .sec01 h2, #contents.top .sec02 h2 {
+	font-size:20px;
+	margin-bottom:10px;
+	width:90%;
+	margin:0 auto;
+}
+#contents.top .sec02 h2 {
+	margin-bottom:20px;
+}
+
+.sec01 iframe + div img{
+	vertical-align:bottom;	
+}
+
+
+iframe {
+		width:100% !important;
+		display:inline-block;
+		vertical-align:bottom;
+}
+
+.sec02 .adjustHeight {
+/*height:400px !important;*/
+  height: 50vw !important;
+}
+
+.fb-page span {
+height:400px !important;
+}
+
+
+#contents.top .sec02 .fL {
+	float:none;
+	width:90%;
+	margin:0 auto;
+	text-align:center;
+}
+#contents.top .sec02 .fR {
+	float:none;
+	width:90%;
+	margin:20px auto 0;
+	text-align:center;
+}
+
+.fb-page {
+	width:100%;
+	display:inline-block;
+}
+
+/*-----------------------
+Footer
+-----------------------*/
+.footerFront {
+	font-size:15px;
+}
+
+
+.footerFront .fL span{
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 10px 10px 0;
+}
+
+
+.footerFront .fR span{
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 0 10px 10px;
+}
+
+
+.footerFront .sp_forseta a:link, .footerFront .sp_forseta a:visited {
+	background-color:#D98802;
+	width:100%;
+	text-align:center;
+	display:block;
+}
+
+.footerFront .sp_forseta a:hover, .footerFront .sp_forseta a:active {
+	background-color:#B47101;
+}
+
+.footerFront .sp_forseta span{
+	background:url(../images/ico_arrow_01.png) no-repeat right center;
+	background-size:16px 13px;
+	padding-right:20px;
+	margin:10px 0 10px 0;
+	display:inline-block;
+}
+
+
+
+
+footer {
+	padding:30px 0 0;
+	font-size:12px;
+}
+
+footer .fR .menuL dt, footer .fR .menuR dt, footer .fR .menu02 dt , footer .fR .menu03 li {
+	font-size:14px;
+}
+
+
+footer .fL {
+	float:none;
+	width:90% !important;
+	margin:0 auto;
+}
+
+footer .fR {
+	float:none;
+	width:90% !important;
+	margin:20px auto 0;
+}
+
+
+
+
+footer .fL .img {
+	width:20% !important;
+	float:inherit;
+	margin:0 auto;
+}
+
+footer .fL .address {
+	width:100%;
+	float:inherit;
+	margin:10px auto 0;
+	text-align:center;
+}
+
+footer .fL dt {
+	width:90% !important;
+	margin:0 auto;
+}
+
+footer .fL .address dl + p {
+	margin:10px auto 0;
+	width:50%;
+}
+
+footer .fR .menu01{
+	display:inherit;
+	}
+
+footer .fR .menu01 li, footer .fR .menu02 li {
+	background:url(../images/ico_03.png) no-repeat left 0.6em;
+	padding-left:10px;
+}
+
+
+footer .fR .menuL, footer .fR .menuR {
+	display:inherit;
+
+}
+
+
+footer .fR dl.menu02 {
+	width:100%;
+}
+
+
+footer .fR ul.menu03  {
+	width:100%;
+
+}
+
+.copyright {
+	margin-top:30px;
+}
+
+/*-----------------------
+PageTop
+-----------------------*/
+
+#topcontrol img {
+	width:50px !important;
+	height:50px !important;
+}
+
+}
+
+
+
+
+
+
+
+
