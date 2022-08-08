@@ -82,9 +82,56 @@ div#mysagscroller2 ul li img{
 	width:490px;
 }
 
-#contents.top .sec01 .fR iframe {
-	vertical-align:bottom;
+#contents.top .sec01 .fR .bnr__image-wrapper {
+	position: relative;
+	overflow: hidden;
 }
+
+#contents.top .sec01 .fR .bnr__image-wrapper img {
+	transform: scale(1);
+	transition: all 0.5s;
+}
+
+
+#contents.top .sec01 .fR .bnr__image-wrapper:hover img {
+	transform: scale(1.2);
+}
+
+#contents.top .sec01 .fR .bnr__content {
+	display: flex;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contents.top .sec01 .fR .bnr__content p {
+	color: #fff;
+	font-weight: 700;
+	font-size: 32px;
+	letter-spacing: 0.1em;
+}
+
+#contents.top .sec01 .fR .bnr__content .btn {
+	color: #fff;
+	margin-top: 20px;
+	padding: 5px 25px;
+	border: 2px solid #fff;
+	font-size: 18px;
+	transition: background-color 0.2s,color 0.2s;
+	text-decoration: none;
+}
+
+#contents.top .sec01 .fR .bnr__content .btn:hover {
+	background: #fff;
+	color: #555;
+}
+
 
 #contents.top .sec02 {
 	background:#009944 url(../../images/bg_03.png) no-repeat center top;
@@ -612,9 +659,13 @@ div#mysagscroller2 ul li img{
 	margin-bottom:50px;
 }
 #contents.whychoose h3 {
-	margin-bottom:60px;
+	margin-bottom:40px;
 	font-size:30px;
 	font-weight:normal;
+}
+#contents.whychoose .youtube {
+	margin-bottom: 64px;
+	text-align: center;
 }
 #contents.whychoose .block {
 	border-bottom:1px solid #EAEAEA;
