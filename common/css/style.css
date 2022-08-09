@@ -375,6 +375,90 @@ div#mysagscroller2 ul li img{
 	float:right;
 }
 
+/* ------------------------------
+ admissions(前application)
+------------------------------ */
+#contents.admissions h2 {
+	margin-bottom:50px;
+	text-align:center;
+}
+#contents.admissions h4 {
+	margin-bottom:50px;
+}
+
+#contents.admissions .block {
+	border-bottom:1px solid #EAEAEA;
+	margin-bottom:40px;
+	padding-bottom:40px;
+}
+#contents.admissions .block p:first-child {
+	margin-bottom:15px;
+	color:#009944;
+	font-size:30px;
+}
+#contents.admissions .block p {
+	margin-bottom:20px;
+}
+#contents.admissions .block p:last-child {
+	margin-bottom:0;
+}
+
+#contents.admissions .block .applications-wrapper {
+	margin-top: 40px;
+	margin-bottom: 64px;
+}
+
+#contents.admissions .block p.applications__title {
+	color: #4c4c4c;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+#contents.admissions .applications {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+#contents.admissions .school-tour-button-wrapper {
+	margin-top: 40px;
+	margin-bottom: 64px;
+	text-align: center;
+}
+
+#contents.admissions .school-tour-button {
+	display: inline-block;
+	position: relative;
+	padding: 10px 120px 10px 60px;	
+	background: yellowgreen;
+	color: #fff;
+	text-decoration: none;
+	line-height: 1.2;
+	transition: opacity 0.3s;
+}
+
+#contents.admissions .school-tour-button:hover{
+	opacity: 0.7;
+}
+
+#contents.admissions .school-tour-button::after {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	margin-right: 20px;
+	background: url(../images/ico_arrow_01.png) no-repeat right center;
+	content: '';
+}
+
+#contents.admissions .school-tour-button span{
+	display: block;
+	font-size: 85%;
+}
+
 
 
 
