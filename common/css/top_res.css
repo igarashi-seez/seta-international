@@ -250,6 +250,9 @@ background:none;
 .flexslider_sp {
 	display:block;
 }
+.top_movie__fullbtn{
+	width: 40%;
+}
 #contents.top .sec01{	
 	border-top:5px solid #009944;
 }

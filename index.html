@@ -45,6 +45,12 @@
 
 <!-- /メインスライダー -->
 
+<!-- トップムービー -->
+<link rel="stylesheet" href="common/css/magnific-popup.css" type="text/css" media="all" />
+<script type="text/javascript" src="common/js/magnific-popup.min.js"></script>
+<!-- /トップムービー -->
+
+
 
 
 <!-- 言語スライダー -->
@@ -275,27 +281,30 @@ $(function(){
 
 <!-- InstanceBeginEditable name="contents" -->
 
-<div id="coin-slider" class="main">
-<img src="images/main_img_01.jpg" alt="Home away from home" />
-<img src="images/main_img_02.jpg" alt="Foster their love of learning" />
-<img src="images/main_img_03.jpg" alt="Self-discovery through exploration" />
-<img src="images/main_img_04.jpg" alt="A place of wonder" />
+<div class="inner1000px">
+  <div class="top_movie-wrapper">
+    <video class="top_movie" src="images/school movie short.mp4" autoplay loop muted playsinline>
+    </video>
+    <a class="top_movie__fullbtn" href="https://www.youtube.com/watch?v=3Sl9w7lCJBg">
+      <img src="/images/viewfullversion.png" alt="View full version">  
+    </a>
+  </div>
 </div>
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $('#coin-slider').coinslider({ width: 1000, height: 400, navigation: false, delay: 5000, links: false, spw: 5, sph: 4 });
+    $('.top_movie__fullbtn').magnificPopup({
+      disableOn: 480,//700pxでポップアップせずYouTubeへリンクする
+      type: 'iframe',
+      mainClass: 'mfp-fade',
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
   });
-</script>
+  </script>
 
-<div class="flexslider_sp">
-<ul class="slides clearfix">
-<li><img src="images/sp_main_img_01.jpg" alt="Home away from home" /></li>
-<li><img src="images/sp_main_img_02.jpg" alt="Foster their love of learning" /></li>
-<li><img src="images/sp_main_img_03.jpg" alt="Self-discovery through exploration" /></li>
-<li><img src="images/sp_main_img_04.jpg" alt="A place of wonder" /></li>
-</ul>
-</div>
+
 
 <!-- /.main -->
 
