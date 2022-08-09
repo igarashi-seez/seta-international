@@ -389,7 +389,7 @@ div#mysagscroller2 ul li img{
 #contents.admissions .block {
 	border-bottom:1px solid #EAEAEA;
 	margin-bottom:40px;
-	padding-bottom:40px;
+	padding-bottom:64px;
 }
 #contents.admissions .block p:first-child {
 	margin-bottom:15px;
@@ -402,6 +402,12 @@ div#mysagscroller2 ul li img{
 #contents.admissions .block p:last-child {
 	margin-bottom:0;
 }
+
+#contents.admissions .block .adress {
+	display: block;
+	font-style: italic;
+}
+
 
 #contents.admissions .block .applications-wrapper {
 	margin-top: 40px;
@@ -423,7 +429,6 @@ div#mysagscroller2 ul li img{
 
 #contents.admissions .school-tour-button-wrapper {
 	margin-top: 40px;
-	margin-bottom: 64px;
 	text-align: center;
 }
 
